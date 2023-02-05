@@ -1,11 +1,11 @@
 import Phonebook from './Phonebook/Phonebook';
 
-const  App = () => {
+const App = () => {
   return (
     <>
       <Phonebook />
     </>
   );
-}
+};
 
 export default App;

@@ -1,5 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { filterContacts } from '../../redux/slices/filter';
+
+import { setFilter } from 'redux/slices/contacts';
+
 import styles from './Filter.module.css';
 
 const Filter = () => {
@@ -7,7 +9,7 @@ const Filter = () => {
 
   const changeFilter = e => {
     const value = e.target.value.toLowerCase();
-    dispatch(filterContacts(value));
+    dispatch(setFilter(value));
   };
 
   return (
